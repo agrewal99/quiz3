@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oral Ulceration Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    fieldset {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    .button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .explanation {
+      margin-top: 10px;
+      background-color: #f8f8f8;
+      padding: 8px;
+      border-left: 3px solid #007bff;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Oral Ulceration Quiz</h1>
+    <form id="quizForm">
+
+      <!-- Question 1 -->
+      <fieldset data-answer="2">
+        <legend>1. What is an oral ulcer?</legend>
+        <label><input type="radio" name="q1" value="1">A superficial inflammation of the gums</label>
+        <label><input type="radio" name="q1" value="2">An open sore caused by a break in the skin or mucous membrane which fails to heal</label>
+        <label><input type="radio" name="q1" value="3">A benign lump on the tongue</label>
+        <label><input type="radio" name="q1" value="4">A common symptom of flu</label>
+        <p class="explanation">Correct Answer: 2. An oral ulcer is defined as an open sore caused by a break in the mucosal surface of the oral cavity which fails to heal.</p>
+      </fieldset>
+
+      <!-- Question 2 -->
+      <fieldset data-answer="3">
+        <legend>2. What is a key characteristic of Behcet's disease?</legend>
+        <label><input type="radio" name="q2" value="1">It is an infection caused by bacteria</label>
+        <label><input type="radio" name="q2" value="2">It is an autoimmune skin disease</label>
+        <label><input type="radio" name="q2" value="3">It is a vasculitis affecting various organs including the oral cavity</label>
+        <label><input type="radio" name="q2" value="4">It is caused by trauma</label>
+        <p class="explanation">Correct Answer: 3. Behcet's is a vasculitis that can cause oral ulceration, among other symptoms.</p>
+      </fieldset>
+
+      <!-- Question 3 -->
+      <fieldset data-answer="1">
+        <legend>3. Which of the following is a cause of oral ulcers?</legend>
+        <label><input type="radio" name="q3" value="1">Trauma from ill-fitting dentures</label>
+        <label><input type="radio" name="q3" value="2">Exposure to cold temperatures</label>
+        <label><input type="radio" name="q3" value="3">Drinking acidic beverages</label>
+        <label><input type="radio" name="q3" value="4">Viral fever</label>
+        <p class="explanation">Correct Answer: 1. Trauma, such as that caused by ill-fitting dentures, is a common cause of oral ulcers.</p>
+      </fieldset>
+
+      <!-- Question 4 -->
+      <fieldset data-answer="4">
+        <legend>4. Which of the following pathogens can cause oral ulceration?</legend>
+        <label><input type="radio" name="q4" value="1">H. pylori</label>
+        <label><input type="radio" name="q4" value="2">E. coli</label>
+        <label><input type="radio" name="q4" value="3">Staphylococcus aureus</label>
+        <label><input type="radio" name="q4" value="4">Herpes Simplex Virus (HSV)</label>
+        <p class="explanation">Correct Answer: 4. Herpes Simplex Virus (HSV) can cause oral ulceration.</p>
+      </fieldset>
+
+      <!-- Question 5 -->
+      <fieldset data-answer="2">
+        <legend>5. What is a differential diagnosis mnemonic for oral ulceration?</legend>
+        <label><input type="radio" name="q5" value="1">VIPER</label>
+        <label><input type="radio" name="q5" value="2">VITAMIN</label>
+        <label><input type="radio" name="q5" value="3">REST</label>
+        <label><input type="radio" name="q5" value="4">ABCDE</label>
+        <p class="explanation">Correct Answer: 2. The mnemonic VITAMIN helps in differential diagnosis of oral ulcers, covering Vascular, Infection, Trauma, Autoimmune, Metabolic, Iatrogenic, Neoplastic.</p>
+      </fieldset>
+
+      <!-- Question 6 -->
+      <fieldset data-answer="1">
+        <legend>6. What type of trauma can lead to oral ulceration?</legend>
+        <label><input type="radio" name="q6" value="1">Physical injuries like biting the inside of the mouth</label>
+        <label><input type="radio" name="q6" value="2">Walking in cold weather</label>
+        <label><input type="radio" name="q6" value="3">Exposure to dust</label>
+        <label><input type="radio" name="q6" value="4">Sunburn</label>
+        <p class="explanation">Correct Answer: 1. Physical trauma such as biting the inside of the mouth can lead to oral ulceration.</p>
+      </fieldset>
+
+      <!-- Question 7 -->
+      <fieldset data-answer="3">
+        <legend>7. Which autoimmune condition is associated with oral ulcers?</legend>
+        <label><input type="radio" name="q7" value="1">Psoriasis</label>
+        <label><input type="radio" name="q7" value="2">Eczema</label>
+        <label><input type="radio" name="q7" value="3">Systemic Lupus Erythematosus (SLE)</label>
+        <label><input type="radio" name="q7" value="4">Type 1 Diabetes</label>
+        <p class="explanation">Correct Answer: 3. Systemic Lupus Erythematosus (SLE) is an autoimmune condition that can lead to oral ulcers.</p>
+      </fieldset>
+
+      <!-- Question 8 -->
+      <fieldset data-answer="4">
+        <legend>8. What type of oral ulceration can be caused by chemotherapy?</legend>
+        <label><input type="radio" name="q8" value="1">Benign lumps</label>
+        <label><input type="radio" name="q8" value="2">Herpetic ulcers</label>
+        <label><input type="radio" name="q8" value="3">Gingival hyperplasia</label>
+        <label><input type="radio" name="q8" value="4">Diffuse superficial ulceration</label>
+        <p class="explanation">Correct Answer: 4. Chemotherapy can cause diffuse superficial ulceration as an adverse side effect.</p>
+      </fieldset>
+
+      <!-- Question 9 -->
+      <fieldset data-answer="3">
+        <legend>9. Which medication can cause iatrogenic oral ulcers?</legend>
+        <label><input type="radio" name="q9" value="1">Ibuprofen</label>
+        <label><input type="radio" name="q9" value="2">Paracetamol</label>
+        <label><input type="radio" name="q9" value="3">Bisphosphonates</label>
+        <label><input type="radio" name="q9" value="4">Aspirin</label>
+        <p class="explanation">Correct Answer: 3. Bisphosphonates can cause oral ulceration as a side effect.</p>
+      </fieldset>
+
+      <!-- Question 10 -->
+      <fieldset data-answer="1">
+        <legend>10. What is a common symptom of oral lichen planus?</legend>
+        <label><input type="radio" name="q10" value="1">White lacy patches</label>
+        <label><input type="radio" name="q10" value="2">Black pigmentation</label>
+        <label><input type="radio" name="q10" value="3">Yellow pustules</label>
+        <label><input type="radio" name="q10" value="4">Blue discoloration</label>
+        <p class="explanation">Correct Answer: 1. Oral lichen planus often presents as white lacy patches in the mouth.</p>
+      </fieldset>
+
+      <!-- Question 11 -->
+<fieldset data-answer="2">
+    <legend>11. Which oral condition is characterized by repeated trauma from nail picking?</legend>
+    <label><input type="radio" name="q11" value="1">Oral lichen planus</label>
+    <label><input type="radio" name="q11" value="2">Traumatic ulcer</label>
+    <label><input type="radio" name="q11" value="3">Recurrent aphthous stomatitis</label>
+    <label><input type="radio" name="q11" value="4">Pemphigus vulgaris</label>
+    <p class="explanation">Correct Answer: 2. Repeated trauma from nail picking can cause traumatic oral ulcers.</p>
+  </fieldset>
+  
+  <!-- Question 12 -->
+  <fieldset data-answer="3">
+    <legend>12. What is a common adverse drug response leading to oral ulceration?</legend>
+    <label><input type="radio" name="q12" value="1">Paracetamol</label>
+    <label><input type="radio" name="q12" value="2">Ibuprofen</label>
+    <label><input type="radio" name="q12" value="3">Bisphosphonates</label>
+    <label><input type="radio" name="q12" value="4">Antacids</label>
+    <p class="explanation">Correct Answer: 3. Bisphosphonates are known to cause oral ulceration as a side effect.</p>
+  </fieldset>
+  
+  <!-- Question 13 -->
+  <fieldset data-answer="4">
+    <legend>13. Which of the following is NOT typically associated with oral ulceration?</legend>
+    <label><input type="radio" name="q13" value="1">Trauma</label>
+    <label><input type="radio" name="q13" value="2">Infection</label>
+    <label><input type="radio" name="q13" value="3">Autoimmune disease</label>
+    <label><input type="radio" name="q13" value="4">High protein diet</label>
+    <p class="explanation">Correct Answer: 4. A high protein diet is not typically associated with oral ulceration.</p>
+  </fieldset>
+  
+  <!-- Question 14 -->
+  <fieldset data-answer="1">
+    <legend>14. What is the role of Intensity Modulated Radiotherapy (IMRT) in oral ulceration?</legend>
+    <label><input type="radio" name="q14" value="1">Reduces the incidence of radiation-induced oral ulceration</label>
+    <label><input type="radio" name="q14" value="2">Increases the risk of oral ulceration</label>
+    <label><input type="radio" name="q14" value="3">Has no impact on oral ulcers</label>
+    <label><input type="radio" name="q14" value="4">Is only used for autoimmune diseases</label>
+    <p class="explanation">Correct Answer: 1. IMRT reduces the incidence of radiation-induced oral ulceration.</p>
+  </fieldset>
+  
+  <!-- Question 15 -->
+  <fieldset data-answer="3">
+    <legend>15. Which disease is characterized by granulomatous inflammation involving the oral cavity?</legend>
+    <label><input type="radio" name="q15" value="1">Pemphigus vulgaris</label>
+    <label><input type="radio" name="q15" value="2">Lichen planus</label>
+    <label><input type="radio" name="q15" value="3">Orofacial granulomatosis (OFG)</label>
+    <label><input type="radio" name="q15" value="4">Herpes simplex</label>
+    <p class="explanation">Correct Answer: 3. Orofacial granulomatosis (OFG) is characterized by granulomatous inflammation involving the oral cavity.</p>
+  </fieldset>
+  
+  <!-- Question 16 -->
+  <fieldset data-answer="2">
+    <legend>16. Which type of oral ulceration is most commonly caused by biting the inside of the cheek?</legend>
+    <label><input type="radio" name="q16" value="1">Herpetiform ulceration</label>
+    <label><input type="radio" name="q16" value="2">Traumatic ulceration</label>
+    <label><input type="radio" name="q16" value="3">Aphthous ulceration</label>
+    <label><input type="radio" name="q16" value="4">Vascular ulceration</label>
+    <p class="explanation">Correct Answer: 2. Biting the inside of the cheek commonly leads to traumatic ulceration.</p>
+  </fieldset>
+  
+  <!-- Question 17 -->
+  <fieldset data-answer="1">
+    <legend>17. Which of the following describes the characteristic appearance of oral lichen planus?</legend>
+    <label><input type="radio" name="q17" value="1">White lacy patches</label>
+    <label><input type="radio" name="q17" value="2">Dark red ulcers</label>
+    <label><input type="radio" name="q17" value="3">Yellow pustules</label>
+    <label><input type="radio" name="q17" value="4">Purple plaques</label>
+    <p class="explanation">Correct Answer: 1. Oral lichen planus presents as white lacy patches in the mouth.</p>
+  </fieldset>
+  
+  <!-- Question 18 -->
+  <fieldset data-answer="3">
+    <legend>18. What is the first line of treatment for recurrent aphthous stomatitis (RAS)?</legend>
+    <label><input type="radio" name="q18" value="1">Antibiotics</label>
+    <label><input type="radio" name="q18" value="2">Topical analgesics</label>
+    <label><input type="radio" name="q18" value="3">Topical corticosteroids</label>
+    <label><input type="radio" name="q18" value="4">Systemic antivirals</label>
+    <p class="explanation">Correct Answer: 3. Topical corticosteroids are the first line of treatment for recurrent aphthous stomatitis (RAS).</p>
+  </fieldset>
+  
+  <!-- Question 19 -->
+  <fieldset data-answer="4">
+    <legend>19. Which autoimmune blistering disease presents with subepithelial blistering?</legend>
+    <label><input type="radio" name="q19" value="1">Pemphigus vulgaris</label>
+    <label><input type="radio" name="q19" value="2">Oral lichen planus</label>
+    <label><input type="radio" name="q19" value="3">Orofacial granulomatosis</label>
+    <label><input type="radio" name="q19" value="4">Mucous membrane pemphigoid</label>
+    <p class="explanation">Correct Answer: 4. Mucous membrane pemphigoid is an autoimmune disease characterized by subepithelial blistering.</p>
+  </fieldset>
+  
+  <!-- Question 20 -->
+  <fieldset data-answer="1">
+    <legend>20. What is the common trigger for oral ulceration due to chemical trauma?</legend>
+    <label><input type="radio" name="q20" value="1">Aspirin placed directly on oral tissues</label>
+    <label><input type="radio" name="q20" value="2">Eating spicy foods</label>
+    <label><input type="radio" name="q20" value="3">Cold weather</label>
+    <label><input type="radio" name="q20" value="4">Inhalation of fumes</label>
+    <p class="explanation">Correct Answer: 1. Oral ulceration due to chemical trauma can be triggered by placing aspirin directly on oral tissues.</p>
+  </fieldset>
+  
+  <!-- Question 21 -->
+  <fieldset data-answer="3">
+    <legend>21. Which medication is used in the management of mucous membrane pemphigoid?</legend>
+    <label><input type="radio" name="q21" value="1">Amoxicillin</label>
+    <label><input type="radio" name="q21" value="2">Ibuprofen</label>
+    <label><input type="radio" name="q21" value="3">Prednisolone</label>
+    <label><input type="radio" name="q21" value="4">Antacids</label>
+    <p class="explanation">Correct Answer: 3. Prednisolone is commonly used in the management of mucous membrane pemphigoid.</p>
+  </fieldset>
+  
+  <!-- Question 22 -->
+  <fieldset data-answer="2">
+    <legend>22. What type of virus is associated with oral ulceration in immunocompromised patients?</legend>
+    <label><input type="radio" name="q22" value="1">Influenza virus</label>
+    <label><input type="radio" name="q22" value="2">Herpes simplex virus</label>
+    <label><input type="radio" name="q22" value="3">Hepatitis C virus</label>
+    <label><input type="radio" name="q22" value="4">Rhinovirus</label>
+    <p class="explanation">Correct Answer: 2. Herpes simplex virus (HSV) is associated with oral ulceration, especially in immunocompromised patients.</p>
+  </fieldset>
+  
+  <!-- Question 23 -->
+  <fieldset data-answer="4">
+    <legend>23. Which factor is commonly implicated in the pathogenesis of oral lichen planus?</legend>
+    <label><input type="radio" name="q23" value="1">Bacterial infection</label>
+    <label><input type="radio" name="q23" value="2">Dietary deficiency</label>
+    <label><input type="radio" name="q23" value="3">Radiation exposure</label>
+    <label><input type="radio" name="q23" value="4">T-cell mediated immune response</label>
+    <p class="explanation">Correct Answer: 4. Oral lichen planus is often due to a T-cell mediated immune response.</p>
+  </fieldset>
+  
+  <!-- Question 24 -->
+  <fieldset data-answer="1">
+    <legend>24. Which of the following best describes pemphigus vulgaris?</legend>
+    <label><input type="radio" name="q24" value="1">A life-threatening blistering disease with intraepithelial blister formation</label>
+    <label><input type="radio" name="q24" value="2">A benign ulcerative condition affecting only the gums</label>
+    <label><input type="radio" name="q24" value="3">A fungal infection of the tongue</label>
+    <label><input type="radio" name="q24" value="4">A common viral infection</label>
+    <p class="explanation">Correct Answer: 1. Pemphigus vulgaris is a life-threatening blistering disease characterized by intraepithelial blister formation.</p>
+  </fieldset>
+  
+  <!-- Question 25 -->
+  <fieldset data-answer="3">
+    <legend>25. What is a recommended management step for severe recurrent aphthous stomatitis (RAS)?</legend>
+    <label><input type="radio" name="q25" value="1">Topical antibiotics</label>
+    <label><input type="radio" name="q25" value="2">Over-the-counter painkillers</label>
+    <label><input type="radio" name="q25" value="3">Immunomodulators such as colchicine</label>
+    <label><input type="radio" name="q25" value="4">Vitamin supplements</label>
+    <p class="explanation">Correct Answer: 3. Severe cases of recurrent aphthous stomatitis may require immunomodulators such as colchicine for management.</p>
+  </fieldset>
+
+  <!-- Question 26 -->
+<fieldset data-answer="2">
+    <legend>26. What is the primary purpose of using systemic corticosteroids in managing pemphigus vulgaris?</legend>
+    <label><input type="radio" name="q26" value="1">To reduce pain</label>
+    <label><input type="radio" name="q26" value="2">To suppress the autoimmune response</label>
+    <label><input type="radio" name="q26" value="3">To promote wound healing</label>
+    <label><input type="radio" name="q26" value="4">To prevent infection</label>
+    <p class="explanation">Correct Answer: 2. Systemic corticosteroids are used in pemphigus vulgaris to suppress the autoimmune response that causes blister formation.</p>
+  </fieldset>
+  
+  <!-- Question 27 -->
+  <fieldset data-answer="4">
+    <legend>27. Which of the following conditions is characterized by a subepithelial blister?</legend>
+    <label><input type="radio" name="q27" value="1">Recurrent aphthous stomatitis</label>
+    <label><input type="radio" name="q27" value="2">Oral lichen planus</label>
+    <label><input type="radio" name="q27" value="3">Herpes simplex</label>
+    <label><input type="radio" name="q27" value="4">Mucous membrane pemphigoid</label>
+    <p class="explanation">Correct Answer: 4. Mucous membrane pemphigoid is characterized by subepithelial blister formation.</p>
+  </fieldset>
+  
+  <!-- Question 28 -->
+  <fieldset data-answer="1">
+    <legend>28. Which of the following is a common cause of physical trauma leading to oral ulceration?</legend>
+    <label><input type="radio" name="q28" value="1">Ill-fitting dentures</label>
+    <label><input type="radio" name="q28" value="2">Excessive brushing</label>
+    <label><input type="radio" name="q28" value="3">High sugar intake</label>
+    <label><input type="radio" name="q28" value="4">Viral infection</label>
+    <p class="explanation">Correct Answer: 1. Ill-fitting dentures are a common cause of physical trauma leading to oral ulceration.</p>
+  </fieldset>
+  
+  <!-- Question 29 -->
+  <fieldset data-answer="3">
+    <legend>29. Which oral ulceration is associated with a drug-induced thrombocytopenia?</legend>
+    <label><input type="radio" name="q29" value="1">Traumatic ulcer</label>
+    <label><input type="radio" name="q29" value="2">Pemphigus vulgaris</label>
+    <label><input type="radio" name="q29" value="3">Chemotherapy-induced ulcer</label>
+    <label><input type="radio" name="q29" value="4">Aphthous ulcer</label>
+    <p class="explanation">Correct Answer: 3. Chemotherapy can cause oral ulceration and may lead to thrombocytopenia, resulting in petechiae.</p>
+  </fieldset>
+  
+  <!-- Question 30 -->
+  <fieldset data-answer="2">
+    <legend>30. What characterizes oral ulceration caused by radiotherapy?</legend>
+    <label><input type="radio" name="q30" value="1">Occurs only in children</label>
+    <label><input type="radio" name="q30" value="2">Initial erythema followed by sloughing and superficial ulceration</label>
+    <label><input type="radio" name="q30" value="3">Localized and painless</label>
+    <label><input type="radio" name="q30" value="4">Caused by viral infection</label>
+    <p class="explanation">Correct Answer: 2. Oral ulceration caused by radiotherapy is characterized by initial erythema, followed by sloughing and eventual diffuse superficial ulceration.</p>
+  </fieldset>
+  
+  <!-- Question 31 -->
+  <fieldset data-answer="1">
+    <legend>31. Which condition is associated with hemorrhagic crusting of the labial vermilion zone?</legend>
+    <label><input type="radio" name="q31" value="1">Erythema multiforme</label>
+    <label><input type="radio" name="q31" value="2">Pemphigus vulgaris</label>
+    <label><input type="radio" name="q31" value="3">Oral lichen planus</label>
+    <label><input type="radio" name="q31" value="4">Recurrent aphthous stomatitis</label>
+    <p class="explanation">Correct Answer: 1. Erythema multiforme is associated with hemorrhagic crusting of the labial vermilion zone.</p>
+  </fieldset>
+  
+  <!-- Question 32 -->
+  <fieldset data-answer="3">
+    <legend>32. What is the first line of treatment for oral lichen planus?</legend>
+    <label><input type="radio" name="q32" value="1">Antibiotics</label>
+    <label><input type="radio" name="q32" value="2">Systemic corticosteroids</label>
+    <label><input type="radio" name="q32" value="3">Topical corticosteroids</label>
+    <label><input type="radio" name="q32" value="4">Antifungal medication</label>
+    <p class="explanation">Correct Answer: 3. The first line of treatment for oral lichen planus is topical corticosteroids.</p>
+  </fieldset>
+  
+  <!-- Question 33 -->
+  <fieldset data-answer="2">
+    <legend>33. Which virus is commonly associated with erythema multiforme?</legend>
+    <label><input type="radio" name="q33" value="1">Epstein-Barr virus</label>
+    <label><input type="radio" name="q33" value="2">Herpes Simplex Virus (HSV)</label>
+    <label><input type="radio" name="q33" value="3">Human papillomavirus (HPV)</label>
+    <label><input type="radio" name="q33" value="4">Cytomegalovirus</label>
+    <p class="explanation">Correct Answer: 2. Herpes Simplex Virus (HSV) is commonly associated with erythema multiforme.</p>
+  </fieldset>
+  
+  <!-- Question 34 -->
+  <fieldset data-answer="4">
+    <legend>34. Which medication is considered a third-line treatment for oral lichen planus?</legend>
+    <label><input type="radio" name="q34" value="1">Prednisolone</label>
+    <label><input type="radio" name="q34" value="2">Tacrolimus</label>
+    <label><input type="radio" name="q34" value="3">Colchicine</label>
+    <label><input type="radio" name="q34" value="4">Hydroxychloroquine</label>
+    <p class="explanation">Correct Answer: 4. Hydroxychloroquine is considered a third-line treatment for oral lichen planus.</p>
+  </fieldset>
+  
+  <!-- Question 35 -->
+  <fieldset data-answer="3">
+    <legend>35. What is a common feature of recurrent aphthous stomatitis (RAS)?</legend>
+    <label><input type="radio" name="q35" value="1">Presence of vesicles</label>
+    <label><input type="radio" name="q35" value="2">Painless lesions</label>
+    <label><input type="radio" name="q35" value="3">Multiple shallow ulcers</label>
+    <label><input type="radio" name="q35" value="4">Hard, indurated lumps</label>
+    <p class="explanation">Correct Answer: 3. Recurrent aphthous stomatitis (RAS) is characterized by multiple shallow ulcers that are often painful.</p>
+  </fieldset>
+  
+  <!-- Question 36 -->
+  <fieldset data-answer="2">
+    <legend>36. Which of the following is commonly used in the management of erosive oral lichen planus?</legend>
+    <label><input type="radio" name="q36" value="1">Penicillin</label>
+    <label><input type="radio" name="q36" value="2">Topical tacrolimus</label>
+    <label><input type="radio" name="q36" value="3">Aspirin</label>
+    <label><input type="radio" name="q36" value="4">Systemic antivirals</label>
+    <p class="explanation">Correct Answer: 2. Topical tacrolimus is used in the management of erosive oral lichen planus.</p>
+  </fieldset>
+  
+  <!-- Question 37 -->
+  <fieldset data-answer="4">
+    <legend>37. What is a potential cause of oral ulceration due to thermal trauma?</legend>
+    <label><input type="radio" name="q37" value="1">Exposure to cold wind</label>
+    <label><input type="radio" name="q37" value="2">Eating sugary foods</label>
+    <label><input type="radio" name="q37" value="3">Brushing teeth too hard</label>
+    <label><input type="radio" name="q37" value="4">Eating very hot foods like cheese in pizza</label>
+    <p class="explanation">Correct Answer: 4. Oral ulceration due to thermal trauma can be caused by eating very hot foods, such as cheese in pizza.</p>
+  </fieldset>
+  
+  <!-- Question 38 -->
+  <fieldset data-answer="3">
+    <legend>38. What is a common clinical finding in pemphigus vulgaris?</legend>
+    <label><input type="radio" name="q38" value="1">Blistering of the lips</label>
+    <label><input type="radio" name="q38" value="2">Crusting of the gingiva</label>
+    <label><input type="radio" name="q38" value="3">Erosions in the buccal mucosa</label>
+    <label><input type="radio" name="q38" value="4">Hard, painless nodules</label>
+    <p class="explanation">Correct Answer: 3. Erosions in the buccal mucosa are a common clinical finding in pemphigus vulgaris.</p>
+  </fieldset>
+  
+  <!-- Question 39 -->
+  <fieldset data-answer="1">
+    <legend>39. Which type of oral ulceration is associated with vasculitis?</legend>
+    <label><input type="radio" name="q39" value="1">Behcet's disease</label>
+    <label><input type="radio" name="q39" value="2">Oral lichen planus</label>
+    <label><input type="radio" name="q39" value="3">Erythema multiforme</label>
+    <label><input type="radio" name="q39" value="4">Pemphigus vulgaris</label>
+    <p class="explanation">Correct Answer: 1. Behcet's disease is a type of vasculitis that can cause oral ulceration.</p>
+  </fieldset>
+  
+  <!-- Question 40 -->
+  <fieldset data-answer="2">
+    <legend>40. What is the recommended first-line treatment for severe erosive oral lichen planus?</legend>
+    <label><input type="radio" name="q40" value="1">Antibiotics</label>
+    <label><input type="radio" name="q40" value="2">Topical corticosteroids with intralesional corticosteroids</label>
+    <label><input type="radio" name="q40" value="3">Topical anesthetics</label>
+    <label><input type="radio" name="q40" value="4">Systemic antifungals</label>
+    <p class="explanation">Correct Answer: 2. The recommended first-line treatment for severe erosive oral lichen planus is topical corticosteroids along with intralesional corticosteroids.</p>
+  </fieldset>
+  
+    </form>
+    <button class="button" id="submitQuizButton">Submit Quiz</button>
+    <div id="result"></div>
+  </div>
+  <script>
+    document.getElementById('submitQuizButton').addEventListener('click', submitQuiz);
+
+    function submitQuiz() {
+      const fieldsets = document.querySelectorAll('fieldset');
+      let score = 0;
+
+      fieldsets.forEach((fieldset, index) => {
+        const questionName = `q${index + 1}`;
+        const selected = document.querySelector(`input[name="${questionName}"]:checked`);
+        const correctAnswer = parseInt(fieldset.getAttribute('data-answer'));
+        const explanation = fieldset.querySelector('.explanation');
+
+        if (selected) {
+          if (parseInt(selected.value) === correctAnswer) {
+            score++;
+            selected.parentElement.style.border = '2px solid green';
+          } else {
+            selected.parentElement.style.border = '2px solid red';
+          }
+          explanation.style.display = 'block';
+        } else {
+          explanation.textContent += " (Unanswered)";
+          explanation.style.display = 'block';
+        }
+      });
+
+      document.getElementById('result').textContent = `You scored ${score} out of ${fieldsets.length}!`;
+    }
+  </script>
+</body>
+</html>
